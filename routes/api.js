@@ -21,15 +21,20 @@ router.post("/api/workouts", ({ body }, res) => {
 //     });
 // });
 
-// router.get("/api/transaction", (req, res) => {
-//   Transaction.find({})
-//     .sort({ date: -1 })
-//     .then(dbTransaction => {
-//       res.json(dbTransaction);
-//     })
-//     .catch(err => {
-//       res.status(400).json(err);
-//     });
-// });
+router.get("/api/workouts", (req, res) => {
+  Work.aggregate( [
+    {
+       $addFields: {
+          "totalDuration": {$sum: "$exercises.duration"},
+       },
+    },
+] )
+    .then(dbWorkout => {
+      res.json(dbWorkout);
+    })
+    .catch(err => {
+      res.status(400).json(err);
+    });
+});
 
 module.exports = router;
