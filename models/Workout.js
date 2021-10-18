@@ -1,3 +1,4 @@
+//Accessing mongoose framework
 const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
