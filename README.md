@@ -1,4 +1,5 @@
 # WorkoutTrackerGio
+![license](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## Description
 A fitness app that keeps track of your progress and keeps a diary of the various workouts you complete throughout the day.
@@ -52,10 +53,20 @@ Thanks to:
 ## GitHub Repo and Heroku Application
 * [https://github.com/gisosa531/WorkoutTrackerGio](https://github.com/gisosa531/WorkoutTrackerGio)
 
+* [https://gio-workout.herokuapp.com/](https://gio-workout.herokuapp.com/)
+
 ## Images
+Home Page:
+<img src="./public/images/HomePage.png" alt="The start page of the deployed Heroku Tracker Site">
 
+Cardio Input:
+<img src="./public/images/CardioInput.png" alt="Input choices for cardio exercises">
 
+Resistance Input:
+<img src="./public/images/ResistanceInput.png" alt="Input choices for resistance exercises">
 
+Dashboard Stats:
+<img src="./public/images/dashboardStats.png" alt="stats page of 7 workouts">
 
 ## Contact Information
 If you have any problems concerning the repo, please file an issue or email me at 
